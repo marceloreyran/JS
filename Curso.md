@@ -4,6 +4,7 @@
 
 ---
 
+
 ## 📺 Recursos Vistos
 - [x] **JSCamp:** Introducción y funcionamiento de JS.
 - [x] **ManzDev:** Filosofía y qué es JS.
