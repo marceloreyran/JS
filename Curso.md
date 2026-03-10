@@ -20,6 +20,7 @@
 ---
 
 ## 💻 Código de Práctica
+
 Para ejecutar este código en la terminal **Warp**, usa: `node app.js`
 
 ```javascript
