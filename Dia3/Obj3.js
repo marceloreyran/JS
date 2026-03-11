@@ -17,6 +17,6 @@ const person = {
    }
 };
 
-console.log(person.presentation());
-console.log(person.freeTime());
+//console.log(person.presentation());
+//console.log(person.freeTime());
 console.log(person.job());
