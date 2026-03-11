@@ -7,3 +7,4 @@ console.log(mixed[1]);
 number.push(6);
 console.log(number);
 number.pop();
+

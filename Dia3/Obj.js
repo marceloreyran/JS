@@ -11,7 +11,7 @@
  */
 
 //Objetos
- const persona ={
+ const persona = {
     nombre : "Marcelo",
     edad : 30,
     trabajo: "Desarrollador",
@@ -21,3 +21,13 @@
 
     console.log(persona.nombre);
     persona.saludar();
+
+//Marcas de autos
+    const marcas = {
+    mazda: "CX-30",
+    toyota: "corolla",
+    nissan: "sentra",
+    auto() {console.log("El mejor auto de mazda es: "  +  marcas.mazda ); }
+};
+
+marcas.auto();
