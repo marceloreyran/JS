@@ -1,3 +1,5 @@
+//Ejercicio Objeto con persona con metodos 
+
 const person = {
     name: "Marcelo",
     age: 39,
