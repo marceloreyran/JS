@@ -40,3 +40,4 @@ console.log(cuenta.verHistorial());
 
 //Esta es una simulación básica de una cuenta bancaria con operaciones de depósito, retiro, consulta de saldo e historial de transacciones. Puedes expandirla agregando más funcionalidades como transferencias entre cuentas, intereses, etc.
 //Recuerda que este es un ejemplo simple y no debe usarse para aplicaciones reales de banca, ya que carece de seguridad y validaciones necesarias.
+//Espero que esto te sea útil para entender cómo crear objetos más complejos en JavaScript. Si tienes alguna pregunta o necesitas más ayuda, no dudes en preguntar.
