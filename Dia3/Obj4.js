@@ -33,8 +33,9 @@ const cuenta = {
 
 
 
-
 console.log(cuenta.depositar(1000));
 console.log(cuenta.retirar(5100));
 console.log(cuenta.verSaldo());
 console.log(cuenta.verHistorial());
+
+//Esta es una simulación básica de una cuenta bancaria con operaciones de depósito, retiro, consulta de saldo e historial de transacciones. Puedes expandirla agregando más funcionalidades como transferencias entre cuentas, intereses, etc.
