@@ -14,3 +14,6 @@ const persona = {
 
 console.log(persona.mostrarInfo());
 console.log(`Dirección: ${persona.direccion.calle}, ${persona.direccion.ciudad}, ${persona.direccion.pais}`);
+
+
+// Ejercicio 2: Objeto Libro con Propiedades Anidadas
