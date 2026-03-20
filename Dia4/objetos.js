@@ -13,13 +13,24 @@ console.log(persona.ciudad);*/
 
 //objeto con metodo simple 
 
-const perro = {
+/*const perro = {
     nombre: "lobo",
     raza: "husky",
     edad: "3 años",
     saludar (){
-        console.log("guau guau soy " + this.nombre);
+        console.log("guau guau mi nombre es " + this.nombre);
     }
 };
 
 perro.saludar();
+console.log(perro.raza);*/
+
+//objeto con varios metodos 
+
+const calculadora ={
+    sumar(a,b) {return a + b;   },
+    restar(a,b) {return a -b; },
+    multiplicar(a,b){return a *b;}
+};
+
+console.log(calculadora.sumar(10,20));
