@@ -34,3 +34,5 @@ const calculadora ={
 };
 
 console.log(calculadora.sumar(10,20));
+console.log(calculadora.sumar(10,50));
+console.log(calculadora.multiplicar(500,10));
