@@ -27,7 +27,7 @@ console.log(perro.raza);*/
 
 //objeto con varios metodos 
 
-const calculadora ={
+/*const calculadora ={
     sumar(a,b) {return a + b;   },
     restar(a,b) {return a -b; },
     multiplicar(a,b){return a *b;}
@@ -35,4 +35,19 @@ const calculadora ={
 
 console.log(calculadora.sumar(10,20));
 console.log(calculadora.sumar(10,50));
-console.log(calculadora.multiplicar(500,10));
+console.log(calculadora.multiplicar(500,10));*/
+
+//objeto con array adentro 
+
+const clase = {
+    materia: "programacion",
+    alumnos: ["mario","ana","matias"],
+    mostrarAlumnos(){
+        this.alumnos.forEach(alumnos=> {console.log(alumnos);
+
+        });
+    }
+};
+
+clase.mostrarAlumnos();
+console.log(clase.materia);
