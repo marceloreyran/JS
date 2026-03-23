@@ -54,7 +54,7 @@ console.log(clase.materia);*/
 
 //objeto que modifica sus propias propiedades 
 
-const cuentaBanco = {
+/* const cuentaBanco = {
 
     titular: "Marcelo",
     saldo: 20000,
@@ -77,4 +77,20 @@ const cuentaBanco = {
 //cuentaBanco.retirar(6000);
 //cuentaBanco.retirar(40000);
 //cuentaBanco.depositar(4000);
-cuentaBanco.retirar(1000);
+cuentaBanco.retirar(1000);*/
+
+// Clases
+//Las clases son basicamente una forma mas orgganizadas de crear objetos 
+
+class Persona {
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    saludar (){
+        console.log("hola soy" + this.nombre)
+    }
+}
+
+const p1 = new Persona("Carlos ", 30);
+p1.saludar();
