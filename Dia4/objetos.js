@@ -76,4 +76,5 @@ const cuentaBanco = {
 //cuentaBanco.depositar(10000);
 //cuentaBanco.retirar(6000);
 //cuentaBanco.retirar(40000);
-cuentaBanco.depositar(4000);
+//cuentaBanco.depositar(4000);
+cuentaBanco.retirar(1000);
