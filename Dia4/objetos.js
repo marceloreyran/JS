@@ -39,7 +39,7 @@ console.log(calculadora.multiplicar(500,10));*/
 
 //objeto con array adentro 
 
-const clase = {
+/*const clase = {
     materia: "programacion",
     alumnos: ["mario","ana","matias"],
     mostrarAlumnos(){
@@ -50,4 +50,30 @@ const clase = {
 };
 
 clase.mostrarAlumnos();
-console.log(clase.materia);
+console.log(clase.materia);*/
+
+//objeto que modifica sus propias propiedades 
+
+const cuentaBanco = {
+
+    titular: "Marcelo",
+    saldo: 20000,
+    depositar(cantidad){
+        this.saldo += cantidad;
+        console.log("Deposito realizado, nuevo saldo: " + this.saldo);
+    }, 
+    retirar(cantidad){
+        if (cantidad > this.saldo){
+            console.log("Fondos insuficientes para retirar");
+        } else {
+            this.saldo -= cantidad;
+           console.log("Retiro realizado, nuevo saldo:" + this.saldo);
+        }
+
+    }
+};
+
+//cuentaBanco.depositar(10000);
+//cuentaBanco.retirar(6000);
+//cuentaBanco.retirar(40000);
+cuentaBanco.depositar(4000);
