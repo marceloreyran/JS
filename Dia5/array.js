@@ -1,50 +1,44 @@
-//Array []
+// ─── CREAR ───────────────────────────────────────────
+const carrito = ["Laptop", "Mouse", "Teclado"];
+//               índice 0    índice 1   índice 2
 
-/** 
- * > ¿Para qué sirve? Para guardar listas ordenadas de cosas. Como una fila de cajones numerados.
+// ─── LEER ────────────────────────────────────────────
+console.log(carrito[0]);        // "Laptop"  → accedes por posición
+console.log(carrito.length);    // 3         → cuántos elementos hay
 
-Caso real: Lista de productos en un carrito de compras.
- */
-
-
-//Crear un array vacío
-let carrito = ["agua", "pan", "leche"];
-
-//-----Leer un elemento del array----
-console.log(carrito[0]);
-console.log(carrito.length);
-
-//-----Agregar un elemento al final del array----
-carrito.push("huevos","verduras");
+// ─── AGREGAR ─────────────────────────────────────────
+carrito.push("Monitor");        // agrega al FINAL
+carrito.unshift("Auriculares"); // agrega al INICIO
 console.log(carrito);
+// ["Auriculares", "Laptop", "Mouse", "Teclado", "Monitor"]
 
-//-----Agregar un elemento al principio del array----
-console.log(carrito.unshift("uvas"));
+// ─── ELIMINAR ────────────────────────────────────────
+carrito.pop();                  // elimina el ÚLTIMO
+carrito.shift();                // elimina el PRIMERO
 console.log(carrito);
+// ["Laptop", "Mouse", "Teclado"]
 
-//--Eliminar el ultimo elemento del array
-carrito.pop("verduras");
-console.log(carrito);
+// ─── BUSCAR ──────────────────────────────────────────
+console.log(carrito.includes("Mouse"));   // true  → ¿existe?
+console.log(carrito.indexOf("Teclado"));  // 2     → ¿en qué posición?
 
-//Elimina el primer elemento del array 
-carrito.shift("uvas");
-console.log(carrito);
+// ─── RECORRER ────────────────────────────────────────
+carrito.forEach((producto, i) => {
+  console.log(`Producto ${i + 1}: ${producto}`);
+});
+// Producto 1: Laptop
+// Producto 2: Mouse
+// Producto 3: Teclado
 
-//--Buscar un elemento en el array 
-console.log(carrito.includes("pan"));
-console.log(carrito.indexOf("leche"));
+// ─── TRANSFORMAR ─────────────────────────────────────
+const precios = [1500, 25, 80];
+const conIVA = precios.map(precio => precio * 1.16);
+console.log(conIVA); // [1740, 29, 92.8]  → nuevo array modificado
 
+// ─── FILTRAR ─────────────────────────────────────────
+const caros = precios.filter(precio => precio > 100);
+console.log(caros); // [1500]  → solo los que cumplen la condición
 
-//Recorrer un array con un ciclo
-carrito.forEach((producto, i)=> {
-    console.log(`Producto ${i + 1}: ${producto}`);
-})
-
-//Transformar un array 
-const precios = [10,20,30];
-const preciosIVA = precios.map(precio => precio * 1.21);
-console.log(preciosIVA);
-
-//Filtrar un array 
-const preciosAltos = precios.filter(precios => precios > 19);
-console.log(preciosAltos);
+// ─── SUMAR TODO ──────────────────────────────────────
+const total = precios.reduce((acum, precio) => acum + precio, 0);
+console.log(total); // 1605  → reduce todo a un solo valor
