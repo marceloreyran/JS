@@ -29,4 +29,25 @@ const empleado = {
 
 };
 
+/*
+//Leer 
 console.log(empleado);
+console.log(empleado.nombre);
+console.log(empleado.habilidades[2]);
+
+//Modificar
+empleado.edad = 45;
+empleado.puesto = "Devops and " + "Senior Developer";
+delete empleado.activado;
+console.log(empleado.aplicarAumento(20));
+console.log(empleado.puesto);
+console.log(empleado.salario);*/
+
+//Recorrer un objeto
+Object.keys(empleado).forEach(clave => {
+    console.log(`Key: ${clave}`);
+});
+
+Object.entries(empleado).forEach(([clave, valor]) => {
+  console.log(`${clave} → ${valor}`);
+});
