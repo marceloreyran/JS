@@ -51,3 +51,9 @@ Object.keys(empleado).forEach(clave => {
 Object.entries(empleado).forEach(([clave, valor]) => {
   console.log(`${clave} → ${valor}`);
 });
+
+
+//Copiar un objeto 
+const copia = {...empleado};
+const copia2 = Object.assign({}, empleado);
+console.log(copia);
