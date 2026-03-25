@@ -45,3 +45,5 @@ puntajes.forEach((puntajes,jugador) =>{
     }
 });
 console.log(`Ganador: ${ganador} con ${maxPuntaje} puntos`);
+
+
