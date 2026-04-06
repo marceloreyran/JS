@@ -57,3 +57,21 @@ Object.entries(empleado).forEach(([clave, valor]) => {
 const copia = {...empleado};
 const copia2 = Object.assign({}, empleado);
 console.log(copia);
+
+
+// Clases 
+// Clases Basicas
+
+
+class Animal {
+    constructor(animal,sonido){
+        this.animal = animal;
+        this.sonido = sonido;
+    }
+    hablar(){
+        console.log(this.nombre + "hace un:" + this.sonido);
+    }
+}
+
+const perro  = new Animal("gato", "miau");
+const gato = new Animal("perro", "guau");
