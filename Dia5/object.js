@@ -69,9 +69,25 @@ class Animal {
         this.sonido = sonido;
     }
     hablar(){
-        console.log(this.nombre + "hace un:" + this.sonido);
+        console.log("el "+ this.animal + " hace un:" + this.sonido);
     }
 }
 
 const perro  = new Animal("gato", "miau");
 const gato = new Animal("perro", "guau");
+console.log(perro.hablar());
+
+//Recorrer un objeto 
+
+const notas = {
+    mate:9, español:8, historia:9, ingles:9
+};
+
+//Recorrer claves y valores 
+for (let materia in notas){
+    console.log(materia + ":" + notas[materia]);
+}
+
+//Obtener arrays de claves/valores
+console.log(Object.keys(notas));
+console.log(Object.values(notas));
