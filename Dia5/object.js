@@ -93,3 +93,28 @@ for (let materia in notas){
 //Obtener arrays de claves/valores
 console.log(Object.keys(notas));
 console.log(Object.values(notas));
+
+//Herencia (extends)
+ class vehiculo {
+    constructor(marca,modelo){
+        this.marca = marca;
+        this.velocidad = this.velocidad;
+    }
+    mover(){
+        console.log(this.marca + " se esta moviendo a una " + this.velocidad + " de km/h");
+    }
+ }
+ class Moto extends vehiculo{
+    constructor(marca,modelo,tipo){
+        super(marca,modelo);
+        this.tipo = this.tipo;
+    }
+    info(){
+        console.log("Moto" + this.tipo +  " - " + this.marca);
+    }
+ }
+
+ const moto = new Moto( "Honda , 130, deportiva");
+ moto.mover();
+ moto.info();
+
