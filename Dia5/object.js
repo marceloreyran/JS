@@ -75,7 +75,9 @@ class Animal {
 
 const perro  = new Animal("gato", "miau");
 const gato = new Animal("perro", "guau");
-console.log(perro.hablar());
+
+gato.hablar();
+perro.hablar();
 
 //Recorrer un objeto 
 
