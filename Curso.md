@@ -33,3 +33,6 @@ let nombre = "Marcelo"; // Puede cambiar
 const PI = 3.1416;     // Valor constante
 
 console.log(`Usuario: ${nombre}`);
+
+
+//Agregando otraso ejercicios de JS
