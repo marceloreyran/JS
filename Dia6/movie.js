@@ -6,3 +6,7 @@ const movie = {
     año: 2026,
     genero: "Documental"
 };
+
+console.log(movie.titulo);
+console.log(movie.actor);
+console.log("Año del lansamiento:"+ movie.año);
