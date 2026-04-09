@@ -10,7 +10,6 @@ const movie = {
 
 console.log(movie.titulo);
 console.log(movie.actor);
-console.log("Año del lansamiento:"+ movie.año);
-console.log("Genero de la movie:" + movie.genero);
 console.log("Año de lanzamiento: " + movie.año);
-console.log(movie.obtenerResumen());
+console.log("Genero de la pelicula :" + movie.genero);
+
