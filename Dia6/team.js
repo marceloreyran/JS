@@ -17,3 +17,4 @@ console.log(team.name);
 console.log(team.city);
 console.log(team.number);
 console.log(team.players);
+console.log(team.position);
