@@ -4,7 +4,7 @@ const team = {
     number: 11,
     estadio: "|Estadio BBVA|",
     players: ["Mochis", "Chavez","Guzman","Salcedo", "Arteaga", "Rodriguez", "Torres","Fimbrez","Corona","Canales","Juca"],
-    position: 1,
+    position: 3,
     getPlayer: function() {
         return this.players[this.position + 1];   
 
@@ -21,3 +21,5 @@ console.log(team.players);
 console.log(team.position);
 console.log(team.estadio);*/
 console.log(team.players[team.position]);
+console.log(team.name.length);
+console.log(team.city.length);
